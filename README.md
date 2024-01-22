@@ -20,7 +20,7 @@ kubectl apply --server-side -f https://github.com/kubernetes-sigs/jobset/release
 Apply the configs here!
 
 ```bash
-kubectl apply -f job.yaml
+kubectl apply -f jobset.yaml
 ```
 
 This will create a cluster-level headless service:
@@ -62,7 +62,7 @@ And follow the link to open the interface to enter your token "testing" that is 
 ![img/interface.png](img/interface.png)
 
 For production you'd likely use a secret or secret store for this.
-Then, use it! When you are done, you can delete just the job to keep your cluster up:
+Then, use it! When you are done, you can delete just the jobset to keep your cluster up:
 
 ```bash
 kubectl delete -f job.yaml
